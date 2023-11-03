@@ -1,10 +1,25 @@
-.item{
-    max-width: 100%;
-    min-width: 300px;
+.item {
+    position: relative;
+    width: 30%;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
     padding: 25px;
     border-radius: 25px;
     margin-bottom: 20px;
+    transition: all ease 1s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.add-bin  {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    
 }

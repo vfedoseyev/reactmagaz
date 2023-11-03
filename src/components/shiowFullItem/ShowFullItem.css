@@ -7,11 +7,14 @@
     width: 100%;
     height: 100%;
     z-index: 5;
-    background-color: rgba(41, 38, 34, 0.24);
-}
+    background-color: rgb(34 35 41 / 87%);
+    display: flex; 
+    align-items: center;
+    justify-content: center; }
 
 .full-item-form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    background: green;
+    width: 250px;
 }
