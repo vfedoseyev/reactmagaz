@@ -1,0 +1,8 @@
+.categories {
+    display: flex;
+    padding: 20px 50px;
+}
+
+.categories div {
+    margin-right: 10px;
+}

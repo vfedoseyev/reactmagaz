@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import Order from '../order/Order';
-
+import './Header.css'
 const showOrders = (props) => {
   let summa = 0
   props.orders.forEach(el => summa += Number.parseFloat(el.price))
@@ -17,7 +17,7 @@ const showOrders = (props) => {
 
 const showNothing = () => {
   return (
-    <div className='empty'>
+    <div className='empty-cart'>
       <h2>Товара нет</h2>
     </div>
   )
@@ -27,18 +27,18 @@ const Header = (props) => {
   let [cartOpen, setCartOpen] = useState(false)
   return (
     <header>
-      <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} />
-      {cartOpen && (
+      <FaShoppingCart className='cart-btn' onClick={() => setCartOpen(cartOpen = !cartOpen)} />
+      {cartOpen  && (
         <div className='shop-cart'>
           {props.orders.length > 0 ?
             showOrders(props) : showNothing()}
         </div>
       )}
       <nav>
-        <ul>
+        <ul className='navbar'>
           <li>Главная</li>
-          <li>О нас</li>
-          <li>Контакты</li>
+          <li>Главная</li>
+          <li>Главная</li>
         </ul>
       </nav>
     </header>
